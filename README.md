@@ -1,15 +1,17 @@
 # SOLID
-Just Learning SOLID principles.
-    - [Single Responsibility](#s)
-    - [Open-Closed](#o)
-    - [Liskov Substitution](#l)
-    - [Interface Segregation](#i)
-    - [Dependency Injection](#d)
+Just Learning SOLID principles.<br/>
+    - [Single Responsibility](#s)<br/>
+    - [Open-Closed](#o)<br/>
+    - [Liskov Substitution](#l)<br/>
+    - [Interface Segregation](#i)<br/>
+    - [Dependency Injection](#d)<br/>
 
 # S 
 ## SRP Single Responsibility Principle
 
 >"Every software component should have one and only one reponsibility".
+
+>"You should be able to describe what each class(or component) does without saying 'and'".
 
 
 
