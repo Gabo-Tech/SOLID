@@ -593,4 +593,4 @@ In the above example, through theOrderClass to maintain their own dependent modu
 
 In the above example, the implementation of IOC is still slightly cumbersome: the module needs to explicitly declare the init method, and the container needs to display the injection dependency and initialize. We can optimize these business independent contents by encapsulating them into base classes and subclasses for inheritance, or simplify them by decorator methods.
 
-    Decorators provide a way for us to add annotations on class declarations and members through metaprogramming syntax. The modifier in JavaScript is currently in the second stage of proposal collection, but it has been supported as an experimental feature in typescript.
+Decorators provide a way for us to add annotations on class declarations and members through metaprogramming syntax. The modifier in JavaScript is currently in the second stage of proposal collection, but it has been supported as an experimental feature in typescript.
