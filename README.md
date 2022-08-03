@@ -1,5 +1,10 @@
 # SOLID
 Just Learning SOLID principles.
+    - [Single Responsibility](#s)
+    - [Open-Closed](#o)
+    - [Liskov Substitution](#l)
+    - [Interface Segregation](#i)
+    - [Dependency Injection](#d)
 
 # S 
 ## SRP Single Responsibility Principle
