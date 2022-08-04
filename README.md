@@ -96,6 +96,10 @@ class rectangleAreaCalculator {
 
 Depend on stable abstractions and modify system's behavior by providing different realizations.
 
+OCP = principle of polymorphism.
+
+OCP = [PV (Protected Variation)](https://www.martinfowler.com/ieeeSoftware/protectedVariation.pdf)
+
 ### Open for extension
 
 Should be possible to extend all modules.
