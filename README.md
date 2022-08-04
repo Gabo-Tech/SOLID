@@ -24,6 +24,10 @@ Just Learning SOLID principles.<br/>
 >"Higher Cohesion helps attain better adherence to the Single Responsibility Principle".
 
 
+### Reusability
+
+If you are going to need to reuse the functionality make it on a separate component. (Brek down stuff.)
+
 
 ### Coupling
 
