@@ -94,6 +94,8 @@ class rectangleAreaCalculator {
 
 >"Software components should be closed for modification, but open for extension".
 
+Depend on stable abstractions and modify system's behavior by providing different realizations.
+
 ### Open for extension
 
 Should be possible to extend all modules.
