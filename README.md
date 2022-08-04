@@ -112,6 +112,10 @@ No implementation changes after modules released to clients.
 
 New features getting added to the software component, should NOT have to modify existing code.
 
+### Protected Variation
+
+Identify points of predicted variation and create a stable interface around them.
+
 #### The Open-Closed Principle often requires decoupling, which, in turn, automatically follows the Single Responsibility Principle.
 
 
