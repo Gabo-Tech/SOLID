@@ -96,9 +96,13 @@ class rectangleAreaCalculator {
 
 ### Open for extension
 
+Should be possible to extend all modules.
+
 A software component should be extendable to add a new feature or to add a new behavior to it.
 
 ### Closed for modification
+
+No implementation changes after modules released to clients.
 
 New features getting added to the software component, should NOT have to modify existing code.
 
