@@ -100,6 +100,10 @@ OCP = principle of polymorphism.
 
 OCP = [PV (Protected Variation)](https://www.martinfowler.com/ieeeSoftware/protectedVariation.pdf)
 
+OCP = Strategy Design Pattern
+
+OCP = Abstract Factory Design Pattern
+
 ### Open for extension
 
 Should be possible to extend all modules.
