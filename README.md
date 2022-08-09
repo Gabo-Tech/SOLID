@@ -219,9 +219,14 @@ class HybridVehicle extends Vehicle {
 
 >"If S is a subtype of T, then objects of type T should be replaceble with objects of type S without altering any of the desirable properties of the program (correctness, task performed, etc.)"
 
+Subclassing or implementation doesn't imply subtype relation.
+
 Subtype: Subclass or realization which can be substituted for the type it extends or implements.
 
-["Abstractions can be used to encapsulate potential modifications. for example, suppose we want a program to run on different machines. We can accomplish this by inventing abstractions that hide tha differences between machines so that to move the program to a different machine only those abstractions need to be reimplemented. A good design principle is to think about expected modifications and organize the design by using abstractions that encapsulate the changes"<br/>- Barbara H. Liskov](https://www.semanticscholar.org/paper/Data-Abstraction-and-Hierarchy-Liskov/36bebabeb72287ad9490e1ebab84e7225ad6a9e5?p2df)
+["Abstractions can be used to encapsulate potential modifications. for example, suppose we want a program to run on different machines. We can accomplish this by inventing abstractions that hide tha differences between machines so that to move the program to a different machine only those abstractions need to be reimplemented. A good design principle is to think about expected modifications and organize the design by using abstractions that encapsulate the changes"<br/><br/>- Barbara H. Liskov](https://www.semanticscholar.org/paper/Data-Abstraction-and-Hierarchy-Liskov/36bebabeb72287ad9490e1ebab84e7225ad6a9e5?p2df)
+(Open-Closed Principle)
+
+[Behavioral Subtyping Using Invariants and Constrains](http://reports-archive.adm.cs.cmu.edu/anon/1999/CMU-CS-99-156.pdf)
 
 ### LSP Questions 
 
@@ -229,6 +234,37 @@ Subtype: Subclass or realization which can be substituted for the type it extend
      2. Is there a framework we can use to identify LSP violations ahead of time?
      3.What's so important about LSP?
 
+### LSP Rules 
+
+#### Method Signature Rules
+
+##### Contravariance of arguments
+
+If a subclass implements a method from its superclass, then the number of arguments should be the same.
+
+The type os each argument in subclass method should be the supertype of the type of the respective argument in superclass method.
+
+
+##### Covariance of result
+
+Either both superclass' and subclass' methods return result, or neither does.
+
+If there is a a result, then the type of the result in the subclass is a subtype of the type of the result in the superclass.
+
+
+##### Exception
+
+Exceptions thrown by a method in the subclass should be contained in the set of exceptions thrown by the respective method in the superclass.
+
+
+#### Method Pre- and Post-Condition Rules
+
+##### Pre-condition:
+ 
+ An assertion about the state of the system before the method is called.
+ 
+ Pre-conditions required by methods of a subclass mustn't be stronger than pre-conditions required by methods os a superclass.
+ 
 ### Break the hierarchy if it fails the substitution test.
 
 ```
