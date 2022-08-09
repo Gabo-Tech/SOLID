@@ -217,6 +217,17 @@ class HybridVehicle extends Vehicle {
 
 >"If it looks like a duck and quacks like a duck but it needs batteries, you probably have the wrong abstraction!"
 
+>"If S is a subtype of T, then objects of type T should be replaceble with objects of type S without altering any of the desirable properties of the program (correctness, task performed, etc.)"
+
+Subtype: Subclass or realization which can be substituted for the type it extends or implements.
+
+["Abstractions can be used to encapsulate potential modifications. for example, suppose we want a program to run on different machines. We can accomplish this by inventing abstractions that hide tha differences between machines so that to move the program to a different machine only those abstractions need to be reimplemented. A good design principle is to think about expected modifications and organize the design by using abstractions that encapsulate the changes"<br/>- Barbara H. Liskov](https://www.semanticscholar.org/paper/Data-Abstraction-and-Hierarchy-Liskov/36bebabeb72287ad9490e1ebab84e7225ad6a9e5?p2df)
+
+### LSP Questions 
+
+     1. Are there specific criteria for replaceability of supertypes by subtypes?
+     2. Is there a framework we can use to identify LSP violations ahead of time?
+     3.What's so important about LSP?
 
 ### Break the hierarchy if it fails the substitution test.
 
