@@ -126,7 +126,9 @@ Identify points of predicted variation and create a stable interface around them
 
 ### OCP Aplication Framework
 
-    1. Is the anticiàted change related to intrinsic instability of business requirements?
+Apply OCP initially only when you're certain about the nature of future changes.
+
+    1. Is the anticipated change related to intrinsic instability of business requirements?
     2. What kind of changes usually happen on projects like this one?
     3. If the potential change doesn't correspond to 1 or 2 above, don't apply OCP.
     4. When requirements change, identify opportunities for extraction of meaningful abstractions and then refactor accordingly.
