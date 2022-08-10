@@ -395,6 +395,10 @@ Each module now only has one job, and has no direct implementation dependencies.
 
 There are no interfaces in JavaScript. There is a way to mimic their behavior, but I don't think there's much sense. Let's better adapt the principle to the js world.
 
+ISP = PSAP = Publish-Subscribe Architectural Pattern || UML sequence diagram. OCP
+
+Careful with event buses. Too many can make code unmaintainable.
+
 Let's define an "abstract" Phone class which will play role of the interface in our case:
 
 ```
