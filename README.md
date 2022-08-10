@@ -393,13 +393,15 @@ Each module now only has one job, and has no direct implementation dependencies.
 
 >"No client should be forced to depend on methods it does not use".
 
-There are no interfaces in JavaScript. There is a way to mimic their behavior, but I don't think there's much sense. Let's better adapt the principle to the js world.
+ISP is a proiniciple of least knowledge and information hiding.
 
 ISP = PSAP = Publish-Subscribe Architectural Pattern || UML sequence diagram. OCP
 
 ISP = ODP = Observer Design Pattern
 
 Careful with event buses. Too many can make code unmaintainable.
+
+There are no interfaces in JavaScript. There is a way to mimic their behavior, but I don't think there's much sense. Let's better adapt the principle to the js world.
 
 Let's define an "abstract" Phone class which will play role of the interface in our case:
 
@@ -500,7 +502,7 @@ class Nokia3310 extends Phone {
 # D 
 ## DIP Dependency Injection Principle
 
->"High-level modules should not depend on low-lwvwl modules. Both should depend on abstractions".
+>"High-level modules should not depend on low-level modules. Both should depend on abstractions".
 
 >"Abstractions should not depend on details. Details should depend on abstractions".
 
