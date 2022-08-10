@@ -259,12 +259,36 @@ Exceptions thrown by a method in the subclass should be contained in the set of 
 
 #### Method Pre- and Post-Condition Rules
 
-##### Pre-condition:
+##### Pre-condition
  
- An assertion about the state of the system before the method is called.
+ Pre-condition: An assertion about the state of the system before the method is called.
  
- Pre-conditions required by methods of a subclass mustn't be stronger than pre-conditions required by methods os a superclass.
+ Pre-conditions required by methods of a subclass mustn't be stronger than pre-conditions required by methods of a superclass.
  
+ 
+##### Post-condition
+ 
+ Post-condition: An assertion about the state of the system after the method execution completes.
+ 
+ Post-conditions guaranteed by methods of a subclass mustn't be weaker than post-conditions guaranteed by methods of a superclass.
+ 
+ 
+#### Class Property Rules
+
+##### Invariant
+
+Invariant: An assertion about a specific class property which is always true.
+
+Invariants guaranteed by a subclass must include all invariants guaranteed by a superclass.
+
+
+##### Constraint
+
+Constraint: An assertion about how a class property evolves over time.
+
+Constraints enforced by a subclass must include all constraints enforced by a superclass.
+
+
 ### Break the hierarchy if it fails the substitution test.
 
 ```
