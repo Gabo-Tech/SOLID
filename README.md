@@ -397,6 +397,8 @@ There are no interfaces in JavaScript. There is a way to mimic their behavior, b
 
 ISP = PSAP = Publish-Subscribe Architectural Pattern || UML sequence diagram. OCP
 
+ISP = ODP = Observer Design Pattern
+
 Careful with event buses. Too many can make code unmaintainable.
 
 Let's define an "abstract" Phone class which will play role of the interface in our case:
